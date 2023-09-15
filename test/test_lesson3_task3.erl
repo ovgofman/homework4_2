@@ -2,7 +2,7 @@
 %%% @author alex
 %%% @copyright (C) 2023
 %%% @doc
-%%% Returns the very first word.
+%%% Maps String to List of Words w/ Specified Delimiter
 %%% @end
 %%% Created : 15 Sep 2023 1:16 PM
 %%%-------------------------------------------------------------------
@@ -16,7 +16,7 @@
 -include_lib("eunit/include/eunit.hrl").
 
 -ifdef(TEST).
-last_test_() -> [
+split_test_() -> [
   ?_assert(split(<<"Col1-:-Col2-:-Col3-:-Col4-:-Col5">>, <<"-:-">>) =:= [<<"Col1">>, <<"Col2">>, <<"Col3">>, <<"Col4">>, <<"Col5">>]),
   ?_assert(split(<<>>, <<>>) =:= []),
   ?_assert(split(<<"qwe">>, <<>>) =:= [<<"qwe">>]),

@@ -2,7 +2,7 @@
 %%% @author alex
 %%% @copyright (C) 2023
 %%% @doc
-%%% Returns the very first word.
+%%% Maps String to List of Words.
 %%% @end
 %%% Created : 15 Sep 2023 1:16 PM
 %%%-------------------------------------------------------------------
@@ -16,7 +16,7 @@
 -include_lib("eunit/include/eunit.hrl").
 
 -ifdef(TEST).
-last_test_() -> [
+words_test_() -> [
   ?_assert(words(<<" qwe">>) =:= [<<"qwe">>]),
   ?_assert(words(<<" asd ">>) =:= [<<"asd">>]),
   ?_assert(words(<<" asd zxc">>) =:= [<<"asd">>, <<"zxc">>]),

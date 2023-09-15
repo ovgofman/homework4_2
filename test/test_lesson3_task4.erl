@@ -2,7 +2,7 @@
 %%% @author alex
 %%% @copyright (C) 2023
 %%% @doc
-%%% Returns the very first word.
+%%% Maps Json to Map/Proplist
 %%% @end
 %%% Created : 15 Sep 2023 1:16 PM
 %%%-------------------------------------------------------------------
